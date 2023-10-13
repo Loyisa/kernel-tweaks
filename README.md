@@ -11,6 +11,18 @@ The `/etc/sysctl` file allows modifying kernel parameters and making them persis
 1. Clone the repository.  
 2. Use in terminal `chmod 750 ./install.sh`  
 3. Run the install.sh script using `sh ./install.sh`  
+4. (Optional) Install tuned for better performance 
+```shell
+RedHat-based distributions:
+
+The tuned package is installed and enabled by default!
+
+Debian-based distributions:
+
+sudo apt update
+
+sudo apt install tuned tuned-utils tuned-utils-systemtap
+```
 
 ### ❤️ Contribute
 If you want to contribute changes to the project, you are welcome to do so. Simply create a PR by submitting your changes and after reviewing and testing it, it will be accepted.
