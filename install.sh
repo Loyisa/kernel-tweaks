@@ -1,10 +1,10 @@
 #!/bin/bash
-backupFileName = "sysctl.conf-$(date +%Y-%m-%d-%H-%M-%S)"
+backupFileName="sysctl.conf-$(date +%Y-%m-%d-%H-%M-%S)"
 
 echo "Kernel Tweeks by Nfense and DionaMC"
 
 # Check is we are root
-if [ "$EUID" -ne 0 ]; then
+if [ $(id -u) -ne 0 ]; then
   echo "Please this script run as root."
   exit
 fi
